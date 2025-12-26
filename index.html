@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eslobar Agent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>Agente Automático</h1>
+    <p>El agente ejecuta tareas reales en un navegador</p>
+  </header>
+
+  <div class="input-bar">
+    <input id="task" placeholder="Ej: Abrí Canva y creá una slide sobre la Revolución Rusa">
+    <button onclick="runAgent()">Ejecutar</button>
+  </div>
+
+  <div class="workspace">
+    <div class="browser">
+      <div class="tab-bar">
+        <span class="tab active">Navegador del agente</span>
+      </div>
+      <img id="screen" src="" />
+    </div>
+
+    <div class="logs">
+      <h3>Actividad del agente</h3>
+      <pre id="log"></pre>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
